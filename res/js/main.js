@@ -12,20 +12,20 @@ const move = () =>{
     player.style.top = y + "px";
 }
 topBtn.onclick = () => {
-    y-=10;
+    y-=20;
     move();
 } 
 leftBtn.onclick = () => {
-    x-=10;
+    x-=20;
     move();
 } 
 rightBtn.onclick = () => {
-    x+=10;
+    x+=20;
     move();
 } 
 
 bottomBtn.onclick = () => {
-    y+=10;
+    y+=20;
     move();
 } 
 
