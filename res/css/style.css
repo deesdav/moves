@@ -1,0 +1,47 @@
+*{
+    user-select: none;
+    box-sizing: border-box;   
+    transition: .5s;
+}
+#wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    border-radius: 2em;
+    transition: .5s;
+    font-weight: bolder;
+}
+#player{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border: 3px solid black;
+    top: 200px;
+    left: 200px;
+    transition: .5s;
+    animation: bordy 1.5s infinite alternate linear;
+}
+
+@keyframes bordy {
+    0%{border-radius: 1px;}
+    25%{border-radius: 25px;}
+    50%{border-radius: 50px;}
+    75%{border-radius: 75px;}
+    100%{border-radius: 100px;}
+}
